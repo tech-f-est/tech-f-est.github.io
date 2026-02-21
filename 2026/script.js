@@ -257,28 +257,6 @@ class ScrollAnimations {
 }
 
 // ========================================
-// Contact Button Handlers
-// ========================================
-class ContactHandlers {
-    constructor() {
-        this.init();
-    }
-
-    init() {
-        // Handle all "Contact Us" buttons in sponsor packages
-        document.querySelectorAll('.package-card .btn').forEach(button => {
-            if (button.textContent.trim() === 'Nous contacter' ||
-                button.textContent.trim() === 'Contact Us') {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    window.location.href = 'mailto:sponsors@tech-fest.dev';
-                });
-            }
-        });
-    }
-}
-
-// ========================================
 // Initialize Everything
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -288,7 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new MobileMenu();
     new SmoothScroll();
     new ScrollAnimations();
-    new ContactHandlers();
 
     // Add loaded class to body for any CSS animations
     document.body.classList.add('loaded');

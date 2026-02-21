@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech F'Est Nancy 2026 - Conférence Tech Web</title>
+    <meta name="description" content="Tech F'Est Nancy - Conférence d'une journée spécialisée en développement web. 2ème édition.">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="tech-fest-logo.svg" alt="Tech F'Est Nancy Logo" class="logo">
+                    <span class="brand-text">Tech F'Est Nancy</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="previous-edition.html" data-fr="Édition 2025" data-en="2025 Edition">Édition 2025</a></li>
+                    <li><a href="sponsors.html" data-fr="Sponsors" data-en="Sponsors">Sponsors</a></li>
+                    <li><a href="tickets.html" data-fr="Billetterie" data-en="Ticket office">Billetterie</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="lang-switch" aria-label="Switch language">
+                        <span class="lang-fr active">FR</span>
+                        <span class="lang-separator">/</span>
+                        <span class="lang-en">EN</span>
+                    </button>
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="edition-badge" data-fr="2ème édition" data-en="2nd Edition">2ème édition</div>
+                    <h1>
+                        <span class="hero-title">Tech F'Est Nancy</span>
+                        <span class="hero-year">2026</span>
+                    </h1>
+                    <p class="hero-subtitle" data-fr="Une journée dédiée au développement web à Nancy" data-en="A day dedicated to web development in Nancy">
+                        Une journée dédiée au développement web à Nancy
+                    </p>
+                    <div class="hero-info">
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <span data-fr="12 Juin 2026" data-en="June 12, 2026">12 Juin 2026</span>
+                        </div>
+                        <div class="info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>IUT Charlemagne, Nancy, France</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="tickets.html" class="btn btn-primary external-link" data-fr="Réserver vos billets" data-en="Get your tickets">Réserver vos billets</a>
+                        <a href="previous-edition.html" class="btn btn-secondary" data-fr="Voir l'édition 2025" data-en="See 2025 Edition">Voir l'édition 2025</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-logo-container">
+                        <img src="tech-fest-logo.svg" alt="Tech F'Est Logo" class="hero-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 data-fr="À propos de Tech F'Est Nancy" data-en="About Tech F'Est Nancy">À propos de Tech F'Est Nancy</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-fr="Tech F'Est Nancy est une conférence d'une journée dédiée au développement web, organisée par une association à but non lucratif. Après le succès de notre première édition, nous revenons pour une seconde édition qui promet d'être encore plus enrichissante." data-en="Tech F'Est Nancy is a one-day conference dedicated to web development, organized by a non-profit organization. Following the success of our first edition, we're back for a second edition that promises to be even more enriching.">
+                            Tech F'Est Nancy est une conférence d'une journée dédiée au développement web, organisée par une association à but non lucratif. Après le succès de notre première édition, nous revenons pour une seconde édition qui promet d'être encore plus enrichissante.
+                        </p>
+                        <p data-fr="Notre mission est de rassembler la communauté tech de l'Est de la France pour partager des connaissances, découvrir les dernières tendances du développement web et créer des connexions durables." data-en="Our mission is to bring together the tech community of Eastern France to share knowledge, discover the latest web development trends, and create lasting connections.">
+                            Notre mission est de rassembler la communauté tech de l'Est de la France pour partager des connaissances, découvrir les dernières tendances du développement web et créer des connexions durables.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label" data-fr="Journée intensive" data-en="Intensive day">Journée intensive</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label" data-fr="Développement web" data-en="Web development">Développement web</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2ème</div>
+                            <div class="stat-label" data-fr="Édition" data-en="Edition">Édition</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nonprofit">
+            <div class="container">
+                <div class="nonprofit-content">
+                    <div class="nonprofit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <div class="nonprofit-text">
+                        <h3 data-fr="Organisé par une association à but non lucratif" data-en="Organized by a non-profit organization">Organisé par une association à but non lucratif</h3>
+                        <p data-fr="Tech F'Est Nancy est organisé par une association loi 1901. Notre objectif est de promouvoir la culture tech dans l'Est de la France et de rendre les connaissances en développement web accessibles à tous." data-en="Tech F'Est Nancy is organized by a French non-profit association. Our goal is to promote tech culture in Eastern France and make web development knowledge accessible to everyone.">
+                            Tech F'Est Nancy est organisé par une association loi 1901. Notre objectif est de promouvoir la culture tech dans l'Est de la France et de rendre les connaissances en développement web accessibles à tous.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sponsors-teaser">
+            <div class="container">
+                <h2 data-fr="Devenez sponsor" data-en="Become a Sponsor">Devenez sponsor</h2>
+                <p class="sponsors-intro" data-fr="Soutenez la communauté tech et gagnez en visibilité auprès de centaines de développeurs passionnés." data-en="Support the tech community and gain visibility among hundreds of passionate developers.">
+                    Soutenez la communauté tech et gagnez en visibilité auprès de centaines de développeurs passionnés.
+                </p>
+                <div class="sponsor-benefits">
+                    <div class="benefit-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h3 data-fr="Visibilité" data-en="Visibility">Visibilité</h3>
+                        <p data-fr="Rencontrez des développeurs talentueux" data-en="Meet talented developers">Rencontrez des développeurs talentueux</p>
+                    </div>
+                    <div class="benefit-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        <h3 data-fr="Impact" data-en="Impact">Impact</h3>
+                        <p data-fr="Soutenez l'écosystème tech local" data-en="Support the local tech ecosystem">Soutenez l'écosystème tech local</p>
+                    </div>
+                    <div class="benefit-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <h3 data-fr="Opportunités" data-en="Opportunities">Opportunités</h3>
+                        <p data-fr="Créez des partenariats durables" data-en="Create lasting partnerships">Créez des partenariats durables</p>
+                    </div>
+                </div>
+                <div class="cta-center">
+                    <a href="sponsors.html" class="btn btn-primary" data-fr="Découvrir les offres de sponsoring" data-en="Discover sponsorship offers">Découvrir les offres de sponsoring</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-fr="Restons en contact" data-en="Stay in Touch">Restons en contact</h2>
+                <p data-fr="Suivez-nous pour ne rien manquer de l'événement" data-en="Follow us to stay updated about the event">
+                    Suivez-nous pour ne rien manquer de l'événement
+                </p>
+                <div class="contact-links">
+                    <a href="https://bsky.app/profile/tech-fest.dev" target="_blank" class="contact-card">
+                        <svg viewBox="0 0 600 530" fill="currentColor">
+                            <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+                        </svg>
+                        <span>Bluesky</span>
+                    </a>
+                    <a href="https://fr.linkedin.com/company/tech-f-est" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p data-fr="Conférence développement web - Nancy" data-en="Web development conference - Nancy">Conférence développement web - Nancy</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-fr="Nos réseaux" data-en="Social networks">Nos réseaux</h4>
+                        <ul>
+                            <li><a href="https://bsky.app/profile/tech-fest.dev" target="_blank" data-fr="Bluesky" data-en="Bluesky">Bluesky</a></li>
+                            <li><a href="https://fr.linkedin.com/company/tech-f-est" target="_blank" data-fr="Linkedin" data-en="Linkedin">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+                        <ul>
+                            <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                            <li><a href="previous-edition.html" data-fr="Édition 2025" data-en="2025 Edition">Édition 2025</a></li>
+                            <li><a href="sponsors.html" data-fr="Sponsors" data-en="Sponsors">Sponsors</a></li>
+                            <li><a href="tickets.html" data-fr="Billetterie" data-en="Ticket office">Billetterie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech F'Est Nancy - <span data-fr="Association à but non lucratif" data-en="Non-profit organization">Association à but non lucratif</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
