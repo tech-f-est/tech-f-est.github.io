@@ -1501,3 +1501,252 @@ section h2 {
     color: var(--color-text-muted);
     font-size: var(--font-size-sm);
 }
+
+/* ========================================
+   Speakers Page — Enhanced Cards
+   ======================================== */
+.speaker-avatar {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--color-border) 60%, transparent),
+        var(--color-border)
+    );
+    border-radius: 50%;
+    border: 3px solid var(--color-border);
+    color: var(--color-text-muted);
+    transition: all var(--transition-base);
+    overflow: hidden;
+}
+
+.speaker-card:hover .speaker-avatar {
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+}
+
+.speaker-avatar svg {
+    width: 55%;
+    height: 55%;
+}
+
+.speaker-role {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.speaker-bio {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-top: var(--spacing-xs);
+}
+
+.speaker-socials {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.speaker-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    transition: var(--transition-fast);
+}
+
+.speaker-social-link:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+
+.speaker-social-link svg {
+    width: 16px;
+    height: 16px;
+}
+
+.speaker-link {
+    display: inline-block;
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition-fast);
+}
+
+.speaker-link:hover {
+    color: var(--color-secondary);
+}
+
+.call-for-speakers {
+    background-color: var(--color-bg-alt);
+}
+
+/* 3-column layout for detailed speaker cards (with bio) */
+@media (min-width: 768px) {
+    .speakers-grid--detailed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .speakers-grid--detailed {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ========================================
+   Talks / Conferences Page
+   ======================================== */
+.talks {
+    background-color: var(--color-bg);
+}
+
+.talks-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.talk-card {
+    background-color: var(--color-bg-alt);
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    transition: var(--transition-base);
+}
+
+.talk-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 24px var(--color-shadow);
+    transform: translateY(-2px);
+}
+
+.talk-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.talk-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.875rem;
+    border-radius: 100px;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+    margin-top: 0.35rem;
+}
+
+.tag-frontend { background-color: color-mix(in srgb, #3B82F6 20%, transparent); color: #3B82F6; }
+.tag-devops   { background-color: color-mix(in srgb, var(--color-secondary) 20%, transparent); color: var(--color-secondary); }
+.tag-archi    { background-color: color-mix(in srgb, #8B5CF6 20%, transparent); color: #8B5CF6; }
+.tag-perf     { background-color: color-mix(in srgb, var(--color-tertiary) 20%, transparent); color: var(--color-tertiary); }
+.tag-design   { background-color: color-mix(in srgb, #EC4899 20%, transparent); color: #EC4899; }
+.tag-secu     { background-color: color-mix(in srgb, var(--color-primary) 20%, transparent); color: var(--color-primary); }
+.tag-ai       { background-color: color-mix(in srgb, #10B981 20%, transparent); color: #10B981; }
+.tag-mobile   { background-color: color-mix(in srgb, var(--color-accent) 40%, transparent); color: #B45309; }
+.tag-culture  { background-color: color-mix(in srgb, #14B8A6 20%, transparent); color: #0F766E; }
+.tag-api      { background-color: color-mix(in srgb, #6366F1 20%, transparent); color: #4F46E5; }
+.tag-devex    { background-color: color-mix(in srgb, #14B8A6 20%, transparent); color: #0F766E; }
+
+.talk-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--color-text);
+    flex: 1;
+    min-width: 180px;
+}
+
+.talk-abstract {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.talk-speaker {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.talk-speaker-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.talk-speaker-avatar svg {
+    width: 60%;
+    height: 60%;
+}
+
+.talk-speaker-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.talk-speaker-name {
+    font-weight: 700;
+    font-size: var(--font-size-base);
+}
+
+.talk-level {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.875rem;
+    border-radius: 100px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    margin-top: 0.35rem;
+}
+
+.talk-speaker-link {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition-fast);
+}
+
+.talk-speaker-link:hover {
+    color: var(--color-secondary);
+}

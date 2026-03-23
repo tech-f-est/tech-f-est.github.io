@@ -38,7 +38,7 @@ class LanguageManager {
                 } else if (element.tagName === 'BUTTON') {
                     element.textContent = text;
                 } else {
-                    element.textContent = text;
+                    element.innerHTML = text;
                 }
             }
         });

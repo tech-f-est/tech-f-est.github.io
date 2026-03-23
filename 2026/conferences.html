@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conférences - Tech F'Est Nancy 2026</title>
+    <meta name="description" content="Découvrez les conférences de Tech F'Est Nancy 2026, conférence développement web à Nancy">
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WRVHKQF7');</script>
+</head>
+<body>
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WRVHKQF7"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="tech-fest-logo.svg" alt="Tech F'Est Nancy Logo" class="logo">
+                    <span class="brand-text">Tech F'Est Nancy</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="intervenants.html" data-fr="Intervenants" data-en="Speakers">Intervenants</a></li>
+                    <li><a href="conferences.html" class="active" data-fr="Conférences" data-en="Talks">Conférences</a></li>
+                    <li><a href="sponsors.html" data-fr="Sponsors" data-en="Sponsors">Sponsors</a></li>
+                    <li><a href="tickets.html" data-fr="Billetterie" data-en="Ticket office">Billetterie</a></li>
+                    <li><a href="previous-edition.html" data-fr="Édition 2025" data-en="2025 Edition">Édition 2025</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="lang-switch" aria-label="Switch language">
+                        <span class="lang-fr active">FR</span>
+                        <span class="lang-separator">/</span>
+                        <span class="lang-en">EN</span>
+                    </button>
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 data-fr="Les conférences 2026" data-en="The 2026 Talks">Les conférences 2026</h1>
+                    <p class="page-subtitle" data-fr="Des conférences tech par des expertes et experts passionnés" data-en="Tech talks by passionate experts">
+                        Des conférences tech par des expertes et experts passionnés
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="talks">
+            <div class="container">
+                <div class="talks-list">
+
+                    <article class="talk-card" id="talk-olivier">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
+                            <h2 class="talk-title" data-fr="Failure MUST be an option" data-en="Failure MUST be an option">Failure MUST be an option</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="Vous vous souvenez, en tant que développeur, de ce jour où vous avez réalisé que ce que vous codiez partait VRAIMENT en production ? Qu'il n'y aurait pas toujours quelqu'un derrière vous pour vérifier que ce qui s'apprête à être livré est parfaitement fiable ? En général, cette réalisation est très fortement liée à un bon gros bug que vous avez introduit, et qui vous a donné envie de vous cacher sous votre bureau jusqu'à la fin de vos jours. Bon, même si on survit en mettant son égo de côté, ça n'a jamais rien d'agréable. Mais le problème, c'est que des loupés, on en fera d'autres.
+
+Du coup on fait comment pour gérer ça à notre petite échelle ? À l'échelle d'une équipe ? D'une organisation ? C'est de cela dont on parle dans ce talk : de cette réalité qu'il faut accepter, et transformer en opportunité de toutes et tous ressortir grandis de chaque échec. On parle aussi sécurité psychologique avec Amy Edmondson, &quot;perverse incentives&quot; avec nos amis britanniques, viagra, et même navettes spatiales de la NASA !
+
+Dans ce talk on rit, on apprend, et surtout on prend du recul sur l'échec pour ne plus en faire une foire d'empoigne ou un truc à glisser sous le tapis. On agit en adultes, et on fait face, avec la bonne culture et les bons outils." data-en="Do you remember, as a developer, the day you realised that what you were coding was REALLY going to production? That there wouldn't always be someone behind you to check that what was about to be shipped was perfectly reliable? That realisation is usually very strongly linked to a big fat bug you introduced, which made you want to hide under your desk for the rest of your days. Even if we survive by setting our ego aside, it's never pleasant. But the problem is, we'll make more mistakes.
+
+So how do we handle this at our own level? At a team level? At an organisational level? That's what this talk is about: accepting this reality and turning it into an opportunity for everyone to grow from each failure. We also talk about psychological safety with Amy Edmondson, perverse incentives, and even NASA space shuttles!
+
+In this talk we laugh, we learn, and above all we step back from failure to stop making it a blame game or something to sweep under the rug. We act like adults and face it, with the right culture and the right tools.">
+                            Vous vous souvenez, en tant que développeur, de ce jour où vous avez réalisé que ce que vous codiez partait VRAIMENT en production ? Qu'il n'y aurait pas toujours quelqu'un derrière vous pour vérifier que ce qui s'apprête à être livré est parfaitement fiable ? En général, cette réalisation est très fortement liée à un bon gros bug que vous avez introduit, et qui vous a donné envie de vous cacher sous votre bureau jusqu'à la fin de vos jours. Bon, même si on survit en mettant son égo de côté, ça n'a jamais rien d'agréable. Mais le problème, c'est que des loupés, on en fera d'autres.
+                            <br><br>
+                            Du coup on fait comment pour gérer ça à notre petite échelle ? À l'échelle d'une équipe ? D'une organisation ? C'est de cela dont on parle dans ce talk : de cette réalité qu'il faut accepter, et transformer en opportunité de toutes et tous ressortir grandis de chaque échec. On parle aussi sécurité psychologique avec Amy Edmondson, "perverse incentives" avec nos amis britanniques, viagra, et même navettes spatiales de la NASA !
+                            <br><br>
+                            Dans ce talk on rit, on apprend, et surtout on prend du recul sur l'échec pour ne plus en faire une foire d'empoigne ou un truc à glisser sous le tapis. On agit en adultes, et on fait face, avec la bonne culture et les bons outils.
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/olivier-breda.jpg" alt="Olivier Breda" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Olivier Breda</span>
+                                <a href="intervenants.html#speaker-olivier" class="talk-speaker-link" data-fr="→ Voir l'intervenant" data-en="→ See the speaker">→ Voir l'intervenant</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="talk-card" id="talk-arnaud">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-secu" data-fr="Sécurité" data-en="Security">Sécurité</span>
+<h2 class="talk-title" data-fr="Une année de bug bounty dans une banque en ligne" data-en="A year of bug bounty in an online bank">Une année de bug bounty dans une banque en ligne</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="Une banque en ligne peut-elle vraiment ouvrir sa production à des chercheurs en sécurité externes sans perdre le contrôle de sa sécurité et de son image ?
+
+Chez BoursoBank, nous avons lancé un programme de bug bounty sur l'ensemble de notre surface exposée (site web, application mobile, APIs publiques) en complément de nos audits classiques (pentests, audits boîte blanche, SAST, qualité de code). Un an plus tard, le bilan est clair : plusieurs vulnérabilités validées, dont plusieurs majeures jamais détectées par nos audits traditionnels.
+
+Dans cette session, je propose un retour d'expérience sur cette première année de bug bounty en contexte bancaire. Nous verrons pourquoi et comment le programme a été mis en place, comment il est piloté au quotidien et comment nous intégrons les découvertes dans notre cycle de développement.
+
+Je détaillerai notamment un cas concret d'open redirect exploité en production, identifié grâce au bug bounty, et la manière dont nous avons renforcé notre protection sur ce sujet (durcissement d'architecture, tests automatisés, sensibilisation des équipes), sans nouveau bypass détecté à ce jour.
+
+Cette conférence s'adresse aux architectes et développeurs qui souhaitent comprendre, de manière très concrète, comment lancer et exploiter un programme de bug bounty dans une organisation sensible comme une banque en ligne." data-en="Can an online bank really open its production to external security researchers without losing control of its security and image?
+
+At BoursoBank, we launched a bug bounty programme covering our entire exposed surface (website, mobile app, public APIs) alongside our classic audits (pentests, white-box audits, SAST, code quality). A year on, the results are clear: several validated vulnerabilities, including major ones never detected by traditional audits.
+
+In this session, I share a real-world account of this first year of bug bounty in a banking context. We'll look at why and how the programme was set up, how it's managed day-to-day, and how we integrate findings into our development cycle.
+
+I'll detail a concrete case of an open redirect exploited in production, identified through bug bounty, and how we reinforced our protection (architecture hardening, automated tests, team awareness), with no new bypass detected to date.
+
+This talk is aimed at architects and developers who want to understand, in very concrete terms, how to launch and run a bug bounty programme in a sensitive organisation like an online bank.">
+                            Une banque en ligne peut-elle vraiment ouvrir sa production à des chercheurs en sécurité externes sans perdre le contrôle de sa sécurité et de son image ?
+                            <br><br>
+                            Chez BoursoBank, nous avons lancé un programme de bug bounty sur l'ensemble de notre surface exposée (site web, application mobile, APIs publiques) en complément de nos audits classiques. Un an plus tard, le bilan est clair : plusieurs vulnérabilités validées, dont plusieurs majeures jamais détectées par nos audits traditionnels.
+                            <br><br>
+                            Je détaillerai notamment un cas concret d'open redirect exploité en production, identifié grâce au bug bounty, et la manière dont nous avons renforcé notre protection sur ce sujet — sans nouveau bypass détecté à ce jour.
+                            <br><br>
+                            Cette conférence s'adresse aux architectes et développeurs qui souhaitent comprendre, de manière très concrète, comment lancer et exploiter un programme de bug bounty dans une organisation sensible comme une banque en ligne.
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/arnaud-lahaxe.jpg" alt="Arnaud Lahaxe" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Arnaud Lahaxe</span>
+                                <a href="intervenants.html#speaker-arnaud" class="talk-speaker-link" data-fr="→ Voir l'intervenant" data-en="→ See the speaker">→ Voir l'intervenant</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="talk-card" id="talk-anneflore">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-api" data-fr="API &amp; Doc" data-en="API &amp; Docs">API &amp; Doc</span>
+                            <h2 class="talk-title" data-fr="Transformer son API Doc en levier de conversion : benchmark &amp; best practices" data-en="Turning your API Docs into a conversion lever: benchmark &amp; best practices">Transformer son API Doc en levier de conversion : benchmark &amp; best practices</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="Et si votre documentation API devenait un levier de conversion ? Trop souvent reléguée à un rôle purement technique, la documentation API est en réalité souvent l'un des premiers points de contact avec vos utilisateurs. Elle peut devenir un outil marketing aussi puissant que votre produit lui-même — capable de convaincre, de convertir et de fidéliser.
+                        <br><br>
+                        Ce talk, basé sur des études scientifiques, propose une méthode pragmatique pour produire une documentation API de qualité. Nous explorerons une analyse des approches les plus efficaces, un benchmark des pratiques actuelles, et un cadre structuré pour penser sa documentation comme un levier stratégique.
+                        <br><br>
+                        Présenté sous une forme ludique et originale, ce talk vous permettra de vous approprier les meilleures pratiques tout en identifiant comment les adapter à vos propres consommateurs d'API. Venez décortiquer comment transformer une API en API « désirable », et faire de votre documentation un actif stratégique." data-en="What if your API documentation became a conversion lever? Too often relegated to a purely technical role, API documentation is actually one of the first points of contact with your users. It can become a marketing tool as powerful as your product itself — able to convince, convert and retain.
+                        This talk, based on scientific studies, proposes a pragmatic method for producing quality API documentation. We'll explore an analysis of the most effective approaches, a benchmark of current practices, and a structured framework for thinking of documentation as a strategic lever.">
+                            Et si votre documentation API devenait un levier de conversion ? Trop souvent reléguée à un rôle purement technique, la documentation API est en réalité souvent l'un des premiers points de contact avec vos utilisateurs. Elle peut devenir un outil marketing aussi puissant que votre produit lui-même — capable de convaincre, de convertir et de fidéliser.
+                            <br><br>
+                            Ce talk, basé sur des études scientifiques, propose une méthode pragmatique pour produire une documentation API de qualité. Nous explorerons une analyse des approches les plus efficaces, un benchmark des pratiques actuelles, et un cadre structuré pour penser sa documentation comme un levier stratégique.
+                            <br><br>
+                            Présenté sous une forme ludique et originale, ce talk vous permettra de vous approprier les meilleures pratiques tout en identifiant comment les adapter à vos propres consommateurs d'API. Venez décortiquer comment transformer une API en API « désirable », et faire de votre documentation un actif stratégique.
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/anne-flore-bernard.png" alt="Anne-Flore Bernard" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Anne-Flore Bernard</span>
+                                <a href="intervenants.html#speaker-anneflore" class="talk-speaker-link" data-fr="→ Voir l'intervenante" data-en="→ See the speaker">→ Voir l'intervenante</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="talk-card" id="talk-anna">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-devex" data-fr="DevEx &amp; Recherche" data-en="DevEx &amp; Research">DevEx &amp; Recherche</span>
+                            <h2 class="talk-title" data-fr="DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?" data-en="DevEx: focus, feedback, cognitive load — what really matters to devs?">DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="La Developer Experience (DevEx) est devenue un sujet central dans les équipes logicielles : concentration, interruptions, rapidité des feedbacks, outils… tout semble influencer la qualité du travail des devs. Mais sur quelles bases reposent réellement ces affirmations ?
+                        <br><br>
+                        L'étude <em>DevEx in Action</em> (Forsgren et al., 2024) propose un modèle d'analyse pour expliquer comment la concentration, la charge cognitive et les boucles de feedbacks influencent la performance des devs et impactent les résultats au niveau individuel, d'équipe et organisationnel.
+                        <br><br>
+                        Ce talk présente une réplication de cette étude, qui a pour but de tester la robustesse du modèle grâce à un nouvel échantillon. Nous analyserons ce qui semble se confirmer, ce qui varie selon le contexte, et ce que cela signifie concrètement pour les équipes terrain. Au-delà des résultats, l'objectif est d'ouvrir la discussion : comment mieux mesurer la DevEx et encourager les entreprises à mener ce type d'actions auprès de leurs équipes ?" data-en="Developer Experience (DevEx) has become a central topic in software teams: focus, interruptions, feedback loops, tooling… everything seems to influence the quality of developers' work. But what are these claims really based on?
+                        The DevEx in Action study (Forsgren et al., 2024) proposes an analytical model explaining how focus, cognitive load and feedback loops influence dev performance at individual, team and organisational levels. This talk presents a replication of that study, testing the robustness of the model with a new sample.">
+                            La Developer Experience (DevEx) est devenue un sujet central dans les équipes logicielles : concentration, interruptions, rapidité des feedbacks, outils… tout semble influencer la qualité du travail des devs. Mais sur quelles bases reposent réellement ces affirmations ?
+                            <br><br>
+                            L'étude <em>DevEx in Action</em> (Forsgren et al., 2024) propose un modèle d'analyse pour expliquer comment la concentration, la charge cognitive et les boucles de feedbacks influencent la performance des devs et impactent les résultats au niveau individuel, d'équipe et organisationnel.
+                            <br><br>
+                            Ce talk présente une réplication de cette étude, testant la robustesse du modèle grâce à un nouvel échantillon. Nous analyserons ce qui se confirme, ce qui varie selon le contexte, et ce que cela signifie concrètement pour les équipes. L'objectif est aussi d'ouvrir la discussion : comment mieux mesurer la DevEx et encourager les entreprises à mener ce type d'actions ?
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/anna-cathelineau.jpg" alt="Anna Cathelineau" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Anna Cathelineau</span>
+                                <a href="intervenants.html#speaker-anna" class="talk-speaker-link" data-fr="→ Voir l'intervenante" data-en="→ See the speaker">→ Voir l'intervenante</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="next-edition-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-fr="Venez assister à ces conférences !" data-en="Come and attend these talks!">Venez assister à ces conférences !</h2>
+                    <p data-fr="Le 12 juin 2026 à l'IUT Charlemagne, Nancy. Réservez votre place dès maintenant." data-en="On 12 June 2026 at IUT Charlemagne, Nancy. Book your place now.">
+                        Le 12 juin 2026 à l'IUT Charlemagne, Nancy. Réservez votre place dès maintenant.
+                    </p>
+                    <a href="tickets.html" class="btn btn-primary" data-fr="Réserver vos billets" data-en="Get your tickets">Réserver vos billets</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p data-fr="Conférence développement web - Nancy" data-en="Web development conference - Nancy">Conférence développement web - Nancy</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-fr="Nos réseaux" data-en="Social networks">Nos réseaux</h4>
+                        <ul>
+                            <li><a href="https://bsky.app/profile/tech-fest.dev" target="_blank" data-fr="Bluesky" data-en="Bluesky">Bluesky</a></li>
+                            <li><a href="https://fr.linkedin.com/company/tech-f-est" target="_blank" data-fr="Linkedin" data-en="Linkedin">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+                        <ul>
+                            <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                            <li><a href="intervenants.html" data-fr="Intervenants" data-en="Speakers">Intervenants</a></li>
+                            <li><a href="conferences.html" data-fr="Conférences" data-en="Talks">Conférences</a></li>
+                            <li><a href="previous-edition.html" data-fr="Édition 2025" data-en="2025 Edition">Édition 2025</a></li>
+                            <li><a href="sponsors.html" data-fr="Sponsors" data-en="Sponsors">Sponsors</a></li>
+                            <li><a href="tickets.html" data-fr="Billetterie" data-en="Ticket office">Billetterie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech F'Est Nancy - <span data-fr="Association à but non lucratif" data-en="Non-profit organization">Association à but non lucratif</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
