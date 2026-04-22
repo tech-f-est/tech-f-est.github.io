@@ -89,33 +89,140 @@
             <div class="container">
                 <div class="talks-list">
 
-                    <article class="talk-card" id="talk-olivier">
+                    <article class="talk-card" id="talk-antoine">
                         <div class="talk-header">
-                            <span class="talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
-                            <h2 class="talk-title" data-fr="Failure MUST be an option" data-en="Failure MUST be an option">Failure MUST be an option</h2>
+                            <span class="talk-tag tag-devops" data-fr="Infra &amp; Ops" data-en="Infra &amp; Ops">Infra &amp; Ops</span>
+                            <h2 class="talk-title" data-fr="Tester c'est douter ? Alors doutons de notre infra" data-en="Testing means doubting? Then let's doubt our infrastructure">Tester c'est douter ? Alors doutons de notre infra</h2>
                         </div>
-                        <p class="talk-abstract" data-fr="Vous vous souvenez, en tant que développeur, de ce jour où vous avez réalisé que ce que vous codiez partait VRAIMENT en production ? Qu'il n'y aurait pas toujours quelqu'un derrière vous pour vérifier que ce qui s'apprête à être livré est parfaitement fiable ? En général, cette réalisation est très fortement liée à un bon gros bug que vous avez introduit, et qui vous a donné envie de vous cacher sous votre bureau jusqu'à la fin de vos jours. Bon, même si on survit en mettant son égo de côté, ça n'a jamais rien d'agréable. Mais le problème, c'est que des loupés, on en fera d'autres.
+                        <p class="talk-abstract" data-fr="« Si ton code compile, c'est qu'il marche. » Aucun développeur n'oserait dire ces mots aujourd'hui. Pourtant, dans le monde de l'Infrastructure as Code, nous nous contentons trop souvent d'un « terraform apply » réussi comme preuve de qualité. Si ça s'est déployé sans erreur, on considère que c'est gagné. Mais est-ce vraiment le cas ? Un port ouvert par erreur, une règle IAM trop permissive ou un groupe de sécurité manquant ne font pas échouer le déploiement...
 
-Du coup on fait comment pour gérer ça à notre petite échelle ? À l'échelle d'une équipe ? D'une organisation ? C'est de cela dont on parle dans ce talk : de cette réalité qu'il faut accepter, et transformer en opportunité de toutes et tous ressortir grandis de chaque échec. On parle aussi sécurité psychologique avec Amy Edmondson, &quot;perverse incentives&quot; avec nos amis britanniques, viagra, et même navettes spatiales de la NASA !
+Depuis des années, les Ops ont adopté les outils des développeurs (Git, CI/CD, Peer Review), mais nous avons oublié l'essentiel : la culture du test. Dans ce talk, je vous propose de parcourir ensemble les quatre étapes pour entamer cette transformation :
 
-Dans ce talk on rit, on apprend, et surtout on prend du recul sur l'échec pour ne plus en faire une foire d'empoigne ou un truc à glisser sous le tapis. On agit en adultes, et on fait face, avec la bonne culture et les bons outils." data-en="Do you remember, as a developer, the day you realised that what you were coding was REALLY going to production? That there wouldn't always be someone behind you to check that what was about to be shipped was perfectly reliable? That realisation is usually very strongly linked to a big fat bug you introduced, which made you want to hide under your desk for the rest of your days. Even if we survive by setting our ego aside, it's never pleasant. But the problem is, we'll make more mistakes.
+Pourquoi le test est devenu une évidence vitale pour les devs et ce que nous pouvons en apprendre. Pourquoi, malgré l'industrialisation, les tests sont-ils les grands absents côté infra ? Comment traiter l'infrastructure comme un produit à part entière. Linting, tests unitaires, tests end-to-end — quelles stratégies adopter ?
 
-So how do we handle this at our own level? At a team level? At an organisational level? That's what this talk is about: accepting this reality and turning it into an opportunity for everyone to grow from each failure. We also talk about psychological safety with Amy Edmondson, perverse incentives, and even NASA space shuttles!
+Apprenons à douter de notre infra, pour enfin pouvoir lui faire confiance." data-en="&quot;If your code compiles, it works.&quot; No developer would dare say that today. Yet, in the Infrastructure as Code world, we too often settle for a successful &quot;terraform apply&quot; as proof of quality. If it deployed without errors, we call it a win. But is it really? A mistakenly open port, an overly permissive IAM rule or a missing security group won't fail the deployment...
 
-In this talk we laugh, we learn, and above all we step back from failure to stop making it a blame game or something to sweep under the rug. We act like adults and face it, with the right culture and the right tools.">
-                            Vous vous souvenez, en tant que développeur, de ce jour où vous avez réalisé que ce que vous codiez partait VRAIMENT en production ? Qu'il n'y aurait pas toujours quelqu'un derrière vous pour vérifier que ce qui s'apprête à être livré est parfaitement fiable ? En général, cette réalisation est très fortement liée à un bon gros bug que vous avez introduit, et qui vous a donné envie de vous cacher sous votre bureau jusqu'à la fin de vos jours. Bon, même si on survit en mettant son égo de côté, ça n'a jamais rien d'agréable. Mais le problème, c'est que des loupés, on en fera d'autres.
+For years, Ops have adopted the developer toolset (Git, CI/CD, peer review), but we've forgotten the essential: testing culture. In this talk, we'll walk through the four steps to start that transformation: why testing became vital for devs and what we can learn from it, why tests are still mostly absent on the infra side despite industrialisation, how to treat infrastructure as a full-fledged product, and which strategies to adopt (linting, unit tests, end-to-end tests).
+
+Let's learn to doubt our infra — so we can finally trust it.">
+                            « Si ton code compile, c'est qu'il marche. » Aucun développeur n'oserait dire ces mots aujourd'hui. Pourtant, dans le monde de l'Infrastructure as Code, nous nous contentons trop souvent d'un « terraform apply » réussi comme preuve de qualité. Un port ouvert par erreur, une règle IAM trop permissive ou un groupe de sécurité manquant ne font pas échouer le déploiement...
                             <br><br>
-                            Du coup on fait comment pour gérer ça à notre petite échelle ? À l'échelle d'une équipe ? D'une organisation ? C'est de cela dont on parle dans ce talk : de cette réalité qu'il faut accepter, et transformer en opportunité de toutes et tous ressortir grandis de chaque échec. On parle aussi sécurité psychologique avec Amy Edmondson, "perverse incentives" avec nos amis britanniques, viagra, et même navettes spatiales de la NASA !
+                            Depuis des années, les Ops ont adopté les outils des développeurs (Git, CI/CD, peer review), mais nous avons oublié l'essentiel : la culture du test. Dans ce talk, Antoine propose quatre étapes pour entamer cette transformation : ce que l'infra peut apprendre du monde des devs, pourquoi les tests restent les grands absents côté ops, comment traiter l'infrastructure comme un produit à part entière, et quelles stratégies adopter entre linting, tests unitaires et tests end-to-end.
                             <br><br>
-                            Dans ce talk on rit, on apprend, et surtout on prend du recul sur l'échec pour ne plus en faire une foire d'empoigne ou un truc à glisser sous le tapis. On agit en adultes, et on fait face, avec la bonne culture et les bons outils.
+                            Apprenons à douter de notre infra, pour enfin pouvoir lui faire confiance.
                         </p>
                         <div class="talk-speaker">
                             <div class="talk-speaker-avatar">
-                                <img src="speakers/olivier-breda.jpg" alt="Olivier Breda" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                                <img src="speakers/antoine-mayer.jpg" alt="Antoine Mayer" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
                             </div>
                             <div class="talk-speaker-info">
-                                <span class="talk-speaker-name">Olivier Breda</span>
-                                <a href="intervenants.html#speaker-olivier" class="talk-speaker-link" data-fr="→ Voir l'intervenant" data-en="→ See the speaker">→ Voir l'intervenant</a>
+                                <span class="talk-speaker-name">Antoine Mayer</span>
+                                <a href="intervenants.html#speaker-antoine" class="talk-speaker-link" data-fr="→ Voir l'intervenant" data-en="→ See the speaker">→ Voir l'intervenant</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="talk-card" id="talk-alexis">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-devops" data-fr="Infra &amp; Ops" data-en="Infra &amp; Ops">Infra &amp; Ops</span>
+                            <h2 class="talk-title" data-fr="Alerte, tout brûle ! Comment gérer des incidents techniques" data-en="Alert, everything's on fire! How to handle technical incidents">Alerte, tout brûle ! Comment gérer des incidents techniques</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="Chez PayFit, malgré le côté « licorne scale-up », tout est loin d'être rose et plein de paillettes : en moyenne, sur les 6 derniers mois, nous avons un incident par jour — de gravité différente bien sûr.
+
+Venez découvrir comment, en l'espace d'un an, nous sommes passés d'une culture où le mot « incident » n'existait même pas et où les problèmes soudains étaient cachés dans des boards Jira obscurs, à aujourd'hui où nous nous sommes outillés et organisés pour les gérer sereinement et s'en servir comme leviers d'amélioration continue et de réduction de la dette technique.
+
+Au programme : évaluer la sévérité d'un incident, communiquer en interne, communiquer publiquement, mitigations et troubleshooting, outillage et automatisation, post-mortems, et un mot sur l'astreinte.
+
+Vous ressortirez de ce talk avec un retour d'expérience concret sur la manière dont nous gérons nos incidents chez PayFit, et le chemin que nous avons parcouru pour en arriver à une approche saine et constructive — avec bien sûr des idées et tips que vous pourrez appliquer chez vous si besoin !" data-en="At PayFit, despite the &quot;scale-up unicorn&quot; vibe, things are far from all roses and glitter: over the last 6 months we've had, on average, one incident per day — of varying severity of course.
+
+Come discover how, in the span of a year, we moved from a culture where the word &quot;incident&quot; didn't even exist and where sudden problems were hidden in obscure Jira boards, to today where we're tooled up and organised to handle them calmly and turn them into levers for continuous improvement and tech-debt reduction.
+
+On the agenda: assessing incident severity, communicating internally, communicating publicly, mitigations and troubleshooting, tooling and automation, post-mortems, and a word on on-call.
+
+You'll leave this talk with a concrete experience report on how we handle incidents at PayFit and the path we walked to get to a healthy, constructive approach — with plenty of ideas and tips you can apply at home if needed!">
+                            Chez PayFit, malgré le côté « licorne scale-up », tout est loin d'être rose et plein de paillettes : en moyenne, sur les 6 derniers mois, nous avons un incident par jour — de gravité différente bien sûr.
+                            <br><br>
+                            Venez découvrir comment, en l'espace d'un an, nous sommes passés d'une culture où le mot « incident » n'existait même pas et où les problèmes soudains étaient cachés dans des boards Jira obscurs, à aujourd'hui où nous nous sommes outillés et organisés pour les gérer sereinement et s'en servir comme leviers d'amélioration continue et de réduction de la dette technique.
+                            <br><br>
+                            Au programme : évaluer la sévérité d'un incident, communiquer en interne, communiquer publiquement, mitigations et troubleshooting, outillage et automatisation, post-mortems, et un mot sur l'astreinte.
+                            <br><br>
+                            Vous ressortirez de ce talk avec un retour d'expérience concret sur la manière dont nous gérons nos incidents chez PayFit, et le chemin que nous avons parcouru pour en arriver à une approche saine et constructive — avec bien sûr des idées et tips que vous pourrez appliquer chez vous si besoin !
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/alexis-horgix-chotard.jpg" alt="Alexis &quot;Horgix&quot; Chotard" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Alexis "Horgix" Chotard</span>
+                                <a href="intervenants.html#speaker-alexis" class="talk-speaker-link" data-fr="→ Voir l'intervenant" data-en="→ See the speaker">→ Voir l'intervenant</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="talk-card" id="talk-arielle-emilie">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-ai" data-fr="IA &amp; Numérique responsable" data-en="AI &amp; Green IT">IA &amp; Numérique responsable</span>
+                            <h2 class="talk-title" data-fr="IA générative et réchauffement climatique : comment réduire la facture ?" data-en="Generative AI and climate change: how to cut the bill?">IA générative et réchauffement climatique : comment réduire la facture ?</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="L'IA générative fascine, mais elle chauffe… et pas seulement les GPU. Derrière ses prouesses se cache une empreinte écologique massive : data centers énergivores, entraînements XXL, matériaux rares, et aussi une adoption massive…
+
+Lors de cette présentation, nous passerons en revue le véritable coût écologique de l'IA tout au long de sa chaîne de valeur, et surtout, nous identifierons des leviers concrets pour concevoir des systèmes plus responsables, sans sacrifier leur performance.
+
+L'objectif : comprendre l'impact de l'IA générative sur l'environnement et repartir avec des bonnes pratiques actionnables pour réduire son empreinte." data-en="Generative AI fascinates — but it's also heating things up, and not just the GPUs. Behind its feats lies a massive ecological footprint: power-hungry data centres, XXL training runs, rare materials… and massive adoption on top of all that.
+
+In this talk, we'll review the true ecological cost of AI along its entire value chain, and above all identify concrete levers to build more responsible systems without sacrificing performance.
+
+The goal: understand the environmental impact of generative AI and leave with actionable best practices to reduce its footprint.">
+                            L'IA générative fascine, mais elle chauffe… et pas seulement les GPU. Derrière ses prouesses se cache une empreinte écologique massive : data centers énergivores, entraînements XXL, matériaux rares, et aussi une adoption massive…
+                            <br><br>
+                            Lors de cette présentation, nous passerons en revue le véritable coût écologique de l'IA tout au long de sa chaîne de valeur, et surtout, nous identifierons des leviers concrets pour concevoir des systèmes plus responsables, sans sacrifier leur performance.
+                            <br><br>
+                            L'objectif : comprendre l'impact de l'IA générative sur l'environnement et repartir avec des bonnes pratiques actionnables pour réduire son empreinte.
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/arielle-villa-massone.jpg" alt="Arielle Villa-Massone" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Arielle Villa-Massone</span>
+                                <a href="intervenants.html#speaker-arielle" class="talk-speaker-link" data-fr="→ Voir l'intervenante" data-en="→ See the speaker">→ Voir l'intervenante</a>
+                            </div>
+                        </div>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/emilie-greff.jpg" alt="Émilie Greff" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Émilie Greff</span>
+                                <a href="intervenants.html#speaker-emilie" class="talk-speaker-link" data-fr="→ Voir l'intervenante" data-en="→ See the speaker">→ Voir l'intervenante</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="talk-card" id="talk-anna">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-devex" data-fr="DevEx &amp; Recherche" data-en="DevEx &amp; Research">DevEx &amp; Recherche</span>
+                            <h2 class="talk-title" data-fr="DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?" data-en="DevEx: focus, feedback, cognitive load — what really matters to devs?">DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="La Developer Experience (DevEx) est devenue un sujet central dans les équipes logicielles : concentration, interruptions, rapidité des feedbacks, outils… tout semble influencer la qualité du travail des devs. Mais sur quelles bases reposent réellement ces affirmations ?
+                        <br><br>
+                        L'étude <em>DevEx in Action</em> (Forsgren et al., 2024) propose un modèle d'analyse pour expliquer comment la concentration, la charge cognitive et les boucles de feedbacks influencent la performance des devs et impactent les résultats au niveau individuel, d'équipe et organisationnel.
+                        <br><br>
+                        Ce talk présente une réplication de cette étude, qui a pour but de tester la robustesse du modèle grâce à un nouvel échantillon. Nous analyserons ce qui semble se confirmer, ce qui varie selon le contexte, et ce que cela signifie concrètement pour les équipes terrain. Au-delà des résultats, l'objectif est d'ouvrir la discussion : comment mieux mesurer la DevEx et encourager les entreprises à mener ce type d'actions auprès de leurs équipes ?" data-en="Developer Experience (DevEx) has become a central topic in software teams: focus, interruptions, feedback loops, tooling… everything seems to influence the quality of developers' work. But what are these claims really based on?
+                        The DevEx in Action study (Forsgren et al., 2024) proposes an analytical model explaining how focus, cognitive load and feedback loops influence dev performance at individual, team and organisational levels. This talk presents a replication of that study, testing the robustness of the model with a new sample.">
+                            La Developer Experience (DevEx) est devenue un sujet central dans les équipes logicielles : concentration, interruptions, rapidité des feedbacks, outils… tout semble influencer la qualité du travail des devs. Mais sur quelles bases reposent réellement ces affirmations ?
+                            <br><br>
+                            L'étude <em>DevEx in Action</em> (Forsgren et al., 2024) propose un modèle d'analyse pour expliquer comment la concentration, la charge cognitive et les boucles de feedbacks influencent la performance des devs et impactent les résultats au niveau individuel, d'équipe et organisationnel.
+                            <br><br>
+                            Ce talk présente une réplication de cette étude, testant la robustesse du modèle grâce à un nouvel échantillon. Nous analyserons ce qui se confirme, ce qui varie selon le contexte, et ce que cela signifie concrètement pour les équipes. L'objectif est aussi d'ouvrir la discussion : comment mieux mesurer la DevEx et encourager les entreprises à mener ce type d'actions ?
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/anna-cathelineau.jpg" alt="Anna Cathelineau" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Anna Cathelineau</span>
+                                <a href="intervenants.html#speaker-anna" class="talk-speaker-link" data-fr="→ Voir l'intervenante" data-en="→ See the speaker">→ Voir l'intervenante</a>
                             </div>
                         </div>
                     </article>
@@ -161,6 +268,37 @@ This talk is aimed at architects and developers who want to understand, in very 
                         </div>
                     </article>
 
+                    <article class="talk-card" id="talk-eleonore">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
+                            <h2 class="talk-title" data-fr="Au secours, je suis un imposteur !" data-en="Help, I'm an impostor!">Au secours, je suis un imposteur !</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="Le syndrome de l'imposteur est un phénomène psychologique où une personne doute à tort de ses compétences et se sent illégitime.
+
+Au-delà de la définition Wikipédia, j'ai ressenti à maintes reprises ce sentiment désagréable de ne pas être à ma place, d'avoir peur de me lancer, de ne pas me sentir capable. Pourtant, je le sais, ce sentiment est totalement irrationnel.
+
+Mais pourquoi notre cerveau se fait-il si facilement duper ? Et s'il était possible de s'affranchir de ce maudit syndrome ? Ce serait génial non ? Plongeons ensemble dans les biais cognitifs à la recherche des clés pour appréhender ce sentiment d'illégitimité." data-en="Impostor syndrome is a psychological phenomenon where someone wrongly doubts their skills and feels illegitimate.
+
+Beyond the Wikipedia definition, I've felt over and over that uncomfortable sense of not belonging, of being afraid to step up, of not feeling capable. And yet, I know this feeling is completely irrational.
+
+So why does our brain fall for it so easily? And what if we could shake off this cursed syndrome? Wouldn't that be great? Let's dive together into cognitive biases in search of the keys to face this feeling of illegitimacy.">
+                            Le syndrome de l'imposteur est un phénomène psychologique où une personne doute à tort de ses compétences et se sent illégitime.
+                            <br><br>
+                            Au-delà de la définition Wikipédia, j'ai ressenti à maintes reprises ce sentiment désagréable de ne pas être à ma place, d'avoir peur de me lancer, de ne pas me sentir capable. Pourtant, je le sais, ce sentiment est totalement irrationnel.
+                            <br><br>
+                            Mais pourquoi notre cerveau se fait-il si facilement duper ? Et s'il était possible de s'affranchir de ce maudit syndrome ? Ce serait génial non ? Plongeons ensemble dans les biais cognitifs à la recherche des clés pour appréhender ce sentiment d'illégitimité.
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/eleonore-tissier.jpg" alt="Éléonore Tissier" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">Éléonore Tissier</span>
+                                <a href="intervenants.html#speaker-eleonore" class="talk-speaker-link" data-fr="→ Voir l'intervenante" data-en="→ See the speaker">→ Voir l'intervenante</a>
+                            </div>
+                        </div>
+                    </article>
+
                     <article class="talk-card" id="talk-anneflore">
                         <div class="talk-header">
                             <span class="talk-tag tag-api" data-fr="API &amp; Doc" data-en="API &amp; Docs">API &amp; Doc</span>
@@ -189,30 +327,52 @@ This talk is aimed at architects and developers who want to understand, in very 
                         </div>
                     </article>
 
-                    <article class="talk-card" id="talk-anna">
+                    <article class="talk-card" id="talk-olivier">
                         <div class="talk-header">
-                            <span class="talk-tag tag-devex" data-fr="DevEx &amp; Recherche" data-en="DevEx &amp; Research">DevEx &amp; Recherche</span>
-                            <h2 class="talk-title" data-fr="DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?" data-en="DevEx: focus, feedback, cognitive load — what really matters to devs?">DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?</h2>
+                            <span class="talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
+                            <h2 class="talk-title" data-fr="Failure MUST be an option" data-en="Failure MUST be an option">Failure MUST be an option</h2>
                         </div>
-                        <p class="talk-abstract" data-fr="La Developer Experience (DevEx) est devenue un sujet central dans les équipes logicielles : concentration, interruptions, rapidité des feedbacks, outils… tout semble influencer la qualité du travail des devs. Mais sur quelles bases reposent réellement ces affirmations ?
-                        <br><br>
-                        L'étude <em>DevEx in Action</em> (Forsgren et al., 2024) propose un modèle d'analyse pour expliquer comment la concentration, la charge cognitive et les boucles de feedbacks influencent la performance des devs et impactent les résultats au niveau individuel, d'équipe et organisationnel.
-                        <br><br>
-                        Ce talk présente une réplication de cette étude, qui a pour but de tester la robustesse du modèle grâce à un nouvel échantillon. Nous analyserons ce qui semble se confirmer, ce qui varie selon le contexte, et ce que cela signifie concrètement pour les équipes terrain. Au-delà des résultats, l'objectif est d'ouvrir la discussion : comment mieux mesurer la DevEx et encourager les entreprises à mener ce type d'actions auprès de leurs équipes ?" data-en="Developer Experience (DevEx) has become a central topic in software teams: focus, interruptions, feedback loops, tooling… everything seems to influence the quality of developers' work. But what are these claims really based on?
-                        The DevEx in Action study (Forsgren et al., 2024) proposes an analytical model explaining how focus, cognitive load and feedback loops influence dev performance at individual, team and organisational levels. This talk presents a replication of that study, testing the robustness of the model with a new sample.">
-                            La Developer Experience (DevEx) est devenue un sujet central dans les équipes logicielles : concentration, interruptions, rapidité des feedbacks, outils… tout semble influencer la qualité du travail des devs. Mais sur quelles bases reposent réellement ces affirmations ?
+                        <p class="talk-abstract" data-fr="Vous vous souvenez, en tant que développeur, de ce jour où vous avez réalisé que ce que vous codiez partait VRAIMENT en production ? Qu'il n'y aurait pas toujours quelqu'un derrière vous pour vérifier que ce qui s'apprête à être livré est parfaitement fiable ? En général, cette réalisation est très fortement liée à un bon gros bug que vous avez introduit, et qui vous a donné envie de vous cacher sous votre bureau jusqu'à la fin de vos jours. Bon, même si on survit en mettant son égo de côté, ça n'a jamais rien d'agréable. Mais le problème, c'est que des loupés, on en fera d'autres.
+
+Du coup on fait comment pour gérer ça à notre petite échelle ? À l'échelle d'une équipe ? D'une organisation ? C'est de cela dont on parle dans ce talk : de cette réalité qu'il faut accepter, et transformer en opportunité de toutes et tous ressortir grandis de chaque échec. On parle aussi sécurité psychologique avec Amy Edmondson, &quot;perverse incentives&quot; avec nos amis britanniques, viagra, et même navettes spatiales de la NASA !
+
+Dans ce talk on rit, on apprend, et surtout on prend du recul sur l'échec pour ne plus en faire une foire d'empoigne ou un truc à glisser sous le tapis. On agit en adultes, et on fait face, avec la bonne culture et les bons outils." data-en="Do you remember, as a developer, the day you realised that what you were coding was REALLY going to production? That there wouldn't always be someone behind you to check that what was about to be shipped was perfectly reliable? That realisation is usually very strongly linked to a big fat bug you introduced, which made you want to hide under your desk for the rest of your days. Even if we survive by setting our ego aside, it's never pleasant. But the problem is, we'll make more mistakes.
+
+So how do we handle this at our own level? At a team level? At an organisational level? That's what this talk is about: accepting this reality and turning it into an opportunity for everyone to grow from each failure. We also talk about psychological safety with Amy Edmondson, perverse incentives, and even NASA space shuttles!
+
+In this talk we laugh, we learn, and above all we step back from failure to stop making it a blame game or something to sweep under the rug. We act like adults and face it, with the right culture and the right tools.">
+                            Vous vous souvenez, en tant que développeur, de ce jour où vous avez réalisé que ce que vous codiez partait VRAIMENT en production ? Qu'il n'y aurait pas toujours quelqu'un derrière vous pour vérifier que ce qui s'apprête à être livré est parfaitement fiable ? En général, cette réalisation est très fortement liée à un bon gros bug que vous avez introduit, et qui vous a donné envie de vous cacher sous votre bureau jusqu'à la fin de vos jours. Bon, même si on survit en mettant son égo de côté, ça n'a jamais rien d'agréable. Mais le problème, c'est que des loupés, on en fera d'autres.
                             <br><br>
-                            L'étude <em>DevEx in Action</em> (Forsgren et al., 2024) propose un modèle d'analyse pour expliquer comment la concentration, la charge cognitive et les boucles de feedbacks influencent la performance des devs et impactent les résultats au niveau individuel, d'équipe et organisationnel.
+                            Du coup on fait comment pour gérer ça à notre petite échelle ? À l'échelle d'une équipe ? D'une organisation ? C'est de cela dont on parle dans ce talk : de cette réalité qu'il faut accepter, et transformer en opportunité de toutes et tous ressortir grandis de chaque échec. On parle aussi sécurité psychologique avec Amy Edmondson, "perverse incentives" avec nos amis britanniques, viagra, et même navettes spatiales de la NASA !
                             <br><br>
-                            Ce talk présente une réplication de cette étude, testant la robustesse du modèle grâce à un nouvel échantillon. Nous analyserons ce qui se confirme, ce qui varie selon le contexte, et ce que cela signifie concrètement pour les équipes. L'objectif est aussi d'ouvrir la discussion : comment mieux mesurer la DevEx et encourager les entreprises à mener ce type d'actions ?
+                            Dans ce talk on rit, on apprend, et surtout on prend du recul sur l'échec pour ne plus en faire une foire d'empoigne ou un truc à glisser sous le tapis. On agit en adultes, et on fait face, avec la bonne culture et les bons outils.
                         </p>
                         <div class="talk-speaker">
                             <div class="talk-speaker-avatar">
-                                <img src="speakers/anna-cathelineau.jpg" alt="Anna Cathelineau" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                                <img src="speakers/olivier-breda.jpg" alt="Olivier Breda" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
                             </div>
                             <div class="talk-speaker-info">
-                                <span class="talk-speaker-name">Anna Cathelineau</span>
-                                <a href="intervenants.html#speaker-anna" class="talk-speaker-link" data-fr="→ Voir l'intervenante" data-en="→ See the speaker">→ Voir l'intervenante</a>
+                                <span class="talk-speaker-name">Olivier Breda</span>
+                                <a href="intervenants.html#speaker-olivier" class="talk-speaker-link" data-fr="→ Voir l'intervenant" data-en="→ See the speaker">→ Voir l'intervenant</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="talk-card" id="talk-francois">
+                        <div class="talk-header">
+                            <span class="talk-tag tag-ai" data-fr="IA" data-en="AI">IA</span>
+                            <h2 class="talk-title" data-fr="Développer avec l'IA" data-en="Coding with AI">Développer avec l'IA</h2>
+                        </div>
+                        <p class="talk-abstract" data-fr="Les outils de développement assistés par l'intelligence artificielle (Claude Code, Copilot, Cursor, etc.) ont fait un bond qualitatif en 2025, au point où beaucoup de développeurs n'envisagent plus de développer sans eux. Comment maîtriser ces outils ? Qu'est-ce que ça change à notre métier ? Et est-ce que ça sert toujours à quelque chose d'apprendre à programmer ?" data-en="AI-assisted development tools (Claude Code, Copilot, Cursor, etc.) took a qualitative leap in 2025 — to the point where many developers no longer imagine coding without them. How do we master these tools? What does it change about our job? And is it still worth learning to program?">
+                            Les outils de développement assistés par l'intelligence artificielle (Claude Code, Copilot, Cursor, etc.) ont fait un bond qualitatif en 2025, au point où beaucoup de développeurs n'envisagent plus de développer sans eux. Comment maîtriser ces outils ? Qu'est-ce que ça change à notre métier ? Et est-ce que ça sert toujours à quelque chose d'apprendre à programmer ?
+                        </p>
+                        <div class="talk-speaker">
+                            <div class="talk-speaker-avatar">
+                                <img src="speakers/francois-zaninotto.jpeg" alt="François Zaninotto" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+                            </div>
+                            <div class="talk-speaker-info">
+                                <span class="talk-speaker-name">François Zaninotto</span>
+                                <a href="intervenants.html#speaker-francois" class="talk-speaker-link" data-fr="→ Voir l'intervenant" data-en="→ See the speaker">→ Voir l'intervenant</a>
                             </div>
                         </div>
                     </article>
