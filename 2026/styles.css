@@ -83,6 +83,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 96px;
 }
 
 body {
@@ -899,6 +900,7 @@ section h2 {
 }
 
 .speaker-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
@@ -956,6 +958,9 @@ section h2 {
 
 .speaker-info {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .speaker-name {
@@ -1550,8 +1555,10 @@ section h2 {
 
 .speaker-socials {
     display: flex;
+    justify-content: center;
     gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
+    margin-top: auto;
+    padding-top: var(--spacing-md);
 }
 
 .speaker-social-link {
@@ -1578,18 +1585,27 @@ section h2 {
 }
 
 .speaker-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
     margin-top: var(--spacing-md);
+    padding: 0.6rem 1rem;
     font-size: var(--font-size-sm);
     font-weight: 600;
     color: var(--color-primary);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: color var(--transition-fast);
+    background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: var(--transition-fast);
 }
 
+.speaker-card:hover .speaker-link,
 .speaker-link:hover {
-    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
 }
 
 .call-for-speakers {
@@ -1693,6 +1709,11 @@ section h2 {
     gap: var(--spacing-md);
     padding-top: var(--spacing-lg);
     border-top: 1px solid var(--color-border);
+}
+
+.talk-speaker + .talk-speaker {
+    padding-top: var(--spacing-sm);
+    border-top: none;
 }
 
 .talk-speaker-avatar {
