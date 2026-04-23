@@ -1771,3 +1771,62 @@ section h2 {
 .talk-speaker-link:hover {
     color: var(--color-secondary);
 }
+
+/* ========================================
+   Hero Sponsors Banner (homepage)
+   ======================================== */
+.hero-sponsors-banner {
+    background-color: var(--color-bg-alt);
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.hero-sponsors-label {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-sponsors-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xl);
+}
+
+.hero-sponsor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    transition: transform var(--transition-base), opacity var(--transition-base);
+    opacity: 0.9;
+}
+
+.hero-sponsor-logo:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+.hero-sponsor-logo img {
+    max-height: 100%;
+    max-width: 260px;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .hero-sponsor-logo {
+        height: 130px;
+    }
+
+    .hero-sponsor-logo img {
+        max-width: 340px;
+    }
+}
