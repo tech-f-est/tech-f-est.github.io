@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conférences - Tech F'Est Nancy 2026</title>
-    <meta name="description" content="Découvrez les conférences de Tech F'Est Nancy 2026, conférence développement web à Nancy">
+    <title>Programme - Tech F'Est Nancy 2026</title>
+    <meta name="description" content="Programme détaillé de la journée Tech F'Est Nancy 2026, conférence développement web à Nancy">
     <link rel="icon" href="./favicon.ico" sizes="any">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
@@ -19,10 +19,10 @@
 <body>
     <noscript>
         <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WRVHKQF7"
-            height="0"
-            width="0"
-            style="display:none;visibility:hidden">
+                src="https://www.googletagmanager.com/ns.html?id=GTM-WRVHKQF7"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden">
         </iframe>
     </noscript>
 
@@ -40,11 +40,11 @@
                 </button>
                 <ul class="nav-menu">
                     <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                    <li><a href="programme.html" class="active" data-fr="Programme" data-en="Schedule">Programme</a></li>
                     <li><a href="intervenants.html" data-fr="Intervenants" data-en="Speakers">Intervenants</a></li>
-                    <li><a href="conferences.html" class="active" data-fr="Conférences" data-en="Talks">Conférences</a></li>
+                    <li><a href="infos.html" data-fr="Infos pratiques" data-en="Practical info">Infos pratiques</a></li>
                     <li><a href="sponsors.html" data-fr="Sponsors" data-en="Sponsors">Sponsors</a></li>
                     <li><a href="tickets.html" data-fr="Billetterie" data-en="Ticket office">Billetterie</a></li>
-                    <li><a href="previous-edition.html" data-fr="Édition 2025" data-en="2025 Edition">Édition 2025</a></li>
                 </ul>
                 <div class="nav-controls">
                     <button class="lang-switch" aria-label="Switch language">
@@ -77,19 +77,264 @@
         <section class="page-hero">
             <div class="container">
                 <div class="page-hero-content">
-                    <h1 data-fr="Les conférences 2026" data-en="The 2026 Talks">Les conférences 2026</h1>
-                    <p class="page-subtitle" data-fr="Des conférences tech par des expertes et experts passionnés" data-en="Tech talks by passionate experts">
-                        Des conférences tech par des expertes et experts passionnés
+                    <h1 data-fr="Programme" data-en="Schedule">Programme</h1>
+                    <p class="page-subtitle" data-fr="12 Juin 2026 • IUT Charlemagne, Nancy" data-en="June 12, 2026 • IUT Charlemagne, Nancy">
+                        12 Juin 2026 • IUT Charlemagne, Nancy
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="talks">
+        <section class="programme">
             <div class="container">
-                <div class="talks-list">
+                <p class="programme-meta" data-fr="Une journée rythmée par 9 conférences, deux pauses café et un déjeuner. Ouverture des portes à 8h30." data-en="A day packed with 9 talks, two coffee breaks and lunch. Doors open at 8:30 am.">
+                    Une journée rythmée par 9 conférences, deux pauses café et un déjeuner. Ouverture des portes à 8h30.
+                </p>
 
-                    <article class="talk-card" id="talk-antoine">
+                <div class="schedule">
+                    <div class="schedule-row break">
+                        <div class="schedule-time">
+                            <span>08:30</span>
+                            <span class="schedule-duration">30min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Accueil des participants" data-en="Welcome &amp; check-in">Accueil des participants</h3>
+                            <p class="schedule-note" data-fr="Récupération des badges et café d'accueil" data-en="Badge pickup and welcome coffee">
+                                Récupération des badges et café d'accueil
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row keynote">
+                        <div class="schedule-time">
+                            <span>09:00</span>
+                            <span class="schedule-duration">10min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Keynote d'ouverture" data-en="Opening keynote">Keynote d'ouverture</h3>
+                            <p class="schedule-note" data-fr="Présentation de la journée et des thématiques de Tech F'Est 2026" data-en="Welcome talk and overview of Tech F'Est 2026">
+                                Présentation de la journée et des thématiques de Tech F'Est 2026
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row sponsor">
+                        <div class="schedule-time">
+                            <span>09:10</span>
+                            <span class="schedule-duration">10min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Présentation sponsor" data-en="Sponsor presentation">Présentation sponsor</h3>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-antoine">
+                        <div class="schedule-time">
+                            <span>09:20</span>
+                            <span class="schedule-duration">20min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-devops" data-fr="Infra &amp; Ops" data-en="Infra &amp; Ops">Infra &amp; Ops</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="antoine" data-fr="Tester c'est douter ? Alors doutons de notre infra" data-en="Testing means doubting? Then let's doubt our infrastructure">Tester c'est douter ? Alors doutons de notre infra</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-antoine">Antoine Mayer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-alexis">
+                        <div class="schedule-time">
+                            <span>09:45</span>
+                            <span class="schedule-duration">40min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-devops" data-fr="Infra &amp; Ops" data-en="Infra &amp; Ops">Infra &amp; Ops</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="alexis" data-fr="Alerte, tout brûle ! Comment gérer des incidents techniques" data-en="Alert, everything's on fire! How to handle technical incidents">Alerte, tout brûle ! Comment gérer des incidents techniques</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-alexis">Alexis "Horgix" Chotard</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row break">
+                        <div class="schedule-time">
+                            <span>10:25</span>
+                            <span class="schedule-duration">30min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Pause du matin" data-en="Morning break">Pause du matin</h3>
+                            <p class="schedule-note" data-fr="Café, viennoiseries et échanges" data-en="Coffee, pastries and networking">
+                                Café, viennoiseries et échanges
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-arielle-emilie">
+                        <div class="schedule-time">
+                            <span>10:55</span>
+                            <span class="schedule-duration">40min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-ai" data-fr="IA &amp; Numérique responsable" data-en="AI &amp; Green IT">IA &amp; Numérique responsable</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="arielle-emilie" data-fr="IA générative et réchauffement climatique : comment réduire la facture ?" data-en="Generative AI and climate change: how to cut the bill?">IA générative et réchauffement climatique : comment réduire la facture ?</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-arielle">Arielle Villa-Massone</a>
+                                <a href="intervenants.html#speaker-emilie">Émilie Greff</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-anna">
+                        <div class="schedule-time">
+                            <span>11:40</span>
+                            <span class="schedule-duration">20min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-devex" data-fr="DevEx &amp; Recherche" data-en="DevEx &amp; Research">DevEx &amp; Recherche</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="anna" data-fr="DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?" data-en="DevEx: focus, feedback, cognitive load — what really matters to devs?">DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-anna">Anna Cathelineau</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-arnaud">
+                        <div class="schedule-time">
+                            <span>12:05</span>
+                            <span class="schedule-duration">40min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-secu" data-fr="Sécurité" data-en="Security">Sécurité</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="arnaud" data-fr="Une année de bug bounty dans une banque en ligne" data-en="A year of bug bounty in an online bank">Une année de bug bounty dans une banque en ligne</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-arnaud">Arnaud Lahaxe</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row lunch">
+                        <div class="schedule-time">
+                            <span>12:45</span>
+                            <span class="schedule-duration">1h</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Pause déjeuner" data-en="Lunch break">Pause déjeuner</h3>
+                            <p class="schedule-note" data-fr="Repas préparé par un traiteur local, produits de saison et zéro déchet" data-en="Meal prepared by a local caterer, seasonal produce and zero-waste">
+                                Repas préparé par un traiteur local, produits de saison et zéro déchet
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row sponsor">
+                        <div class="schedule-time">
+                            <span>13:45</span>
+                            <span class="schedule-duration">10min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Présentation des speakers de l'après-midi" data-en="Afternoon speakers introduction">Présentation des speakers de l'après-midi</h3>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-eleonore">
+                        <div class="schedule-time">
+                            <span>13:55</span>
+                            <span class="schedule-duration">40min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="eleonore" data-fr="Au secours, je suis un imposteur !" data-en="Help, I'm an impostor!">Au secours, je suis un imposteur !</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-eleonore">Éléonore Tissier</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-anneflore">
+                        <div class="schedule-time">
+                            <span>14:40</span>
+                            <span class="schedule-duration">20min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-api" data-fr="API &amp; Doc" data-en="API &amp; Docs">API &amp; Doc</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="anneflore" data-fr="Transformer son API Doc en levier de conversion : benchmark &amp; best practices" data-en="Turning your API Docs into a conversion lever: benchmark &amp; best practices">Transformer son API Doc en levier de conversion : benchmark &amp; best practices</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-anneflore">Anne-Flore Bernard</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-olivier">
+                        <div class="schedule-time">
+                            <span>15:05</span>
+                            <span class="schedule-duration">40min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="olivier" data-fr="Failure MUST be an option" data-en="Failure MUST be an option">Failure MUST be an option</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-olivier">Olivier Breda</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row break">
+                        <div class="schedule-time">
+                            <span>15:45</span>
+                            <span class="schedule-duration">30min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Pause de l'après-midi" data-en="Afternoon break">Pause de l'après-midi</h3>
+                            <p class="schedule-note" data-fr="Boissons, mignardises et discussions" data-en="Drinks, treats and discussions">
+                                Boissons, mignardises et discussions
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row talk" id="slot-francois">
+                        <div class="schedule-time">
+                            <span>16:15</span>
+                            <span class="schedule-duration">40min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <span class="talk-tag schedule-talk-tag tag-ai" data-fr="IA" data-en="AI">IA</span>
+                            <h3 class="schedule-title"><button type="button" class="schedule-talk-trigger" data-talk-id="francois" data-fr="Développer avec l'IA" data-en="Coding with AI">Développer avec l'IA</button></h3>
+                            <div class="schedule-speakers">
+                                <a href="intervenants.html#speaker-francois">François Zaninotto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-row keynote">
+                        <div class="schedule-time">
+                            <span>16:55</span>
+                            <span class="schedule-duration">10min</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3 class="schedule-title" data-fr="Keynote de clôture" data-en="Closing keynote">Keynote de clôture</h3>
+                            <p class="schedule-note" data-fr="Bilan de la journée et perspectives pour la suite" data-en="Wrap-up of the day and what comes next">
+                                Bilan de la journée et perspectives pour la suite
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-edition-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-fr="Prêt à nous rejoindre ?" data-en="Ready to join us?">Prêt à nous rejoindre ?</h2>
+                    <p data-fr="Réservez votre place et retrouvez-nous le 12 juin 2026 à l'IUT Charlemagne." data-en="Book your seat and join us on June 12, 2026 at IUT Charlemagne.">
+                        Réservez votre place et retrouvez-nous le 12 juin 2026 à l'IUT Charlemagne.
+                    </p>
+                    <a href="tickets.html" class="btn btn-primary" data-fr="Réserver vos billets" data-en="Get your tickets">Réserver vos billets</a>
+                </div>
+            </div>
+        </section>
+    
+<div id="talks-data" hidden aria-hidden="true">
+<div class="talk-data" id="talk-data-antoine">
+<article class="talk-card" id="talk-antoine">
                         <div class="talk-header">
                             <span class="talk-tag tag-devops" data-fr="Infra &amp; Ops" data-en="Infra &amp; Ops">Infra &amp; Ops</span>
                             <h2 class="talk-title" data-fr="Tester c'est douter ? Alors doutons de notre infra" data-en="Testing means doubting? Then let's doubt our infrastructure">Tester c'est douter ? Alors doutons de notre infra</h2>
@@ -111,8 +356,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-alexis">
+</div>
+<div class="talk-data" id="talk-data-alexis">
+<article class="talk-card" id="talk-alexis">
                         <div class="talk-header">
                             <span class="talk-tag tag-devops" data-fr="Infra &amp; Ops" data-en="Infra &amp; Ops">Infra &amp; Ops</span>
                             <h2 class="talk-title" data-fr="Alerte, tout brûle ! Comment gérer des incidents techniques" data-en="Alert, everything's on fire! How to handle technical incidents">Alerte, tout brûle ! Comment gérer des incidents techniques</h2>
@@ -136,8 +382,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-arielle-emilie">
+</div>
+<div class="talk-data" id="talk-data-arielle-emilie">
+<article class="talk-card" id="talk-arielle-emilie">
                         <div class="talk-header">
                             <span class="talk-tag tag-ai" data-fr="IA &amp; Numérique responsable" data-en="AI &amp; Green IT">IA &amp; Numérique responsable</span>
                             <h2 class="talk-title" data-fr="IA générative et réchauffement climatique : comment réduire la facture ?" data-en="Generative AI and climate change: how to cut the bill?">IA générative et réchauffement climatique : comment réduire la facture ?</h2>
@@ -168,8 +415,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-anna">
+</div>
+<div class="talk-data" id="talk-data-anna">
+<article class="talk-card" id="talk-anna">
                         <div class="talk-header">
                             <span class="talk-tag tag-devex" data-fr="DevEx &amp; Recherche" data-en="DevEx &amp; Research">DevEx &amp; Recherche</span>
                             <h2 class="talk-title" data-fr="DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?" data-en="DevEx: focus, feedback, cognitive load — what really matters to devs?">DevEx : concentration, feedback, charge cognitive — qu'est-ce qui compte vraiment pour les devs ?</h2>
@@ -191,8 +439,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-arnaud">
+</div>
+<div class="talk-data" id="talk-data-arnaud">
+<article class="talk-card" id="talk-arnaud">
                         <div class="talk-header">
                             <span class="talk-tag tag-secu" data-fr="Sécurité" data-en="Security">Sécurité</span>
 <h2 class="talk-title" data-fr="Une année de bug bounty dans une banque en ligne" data-en="A year of bug bounty in an online bank">Une année de bug bounty dans une banque en ligne</h2>
@@ -216,8 +465,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-eleonore">
+</div>
+<div class="talk-data" id="talk-data-eleonore">
+<article class="talk-card" id="talk-eleonore">
                         <div class="talk-header">
                             <span class="talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
                             <h2 class="talk-title" data-fr="Au secours, je suis un imposteur !" data-en="Help, I'm an impostor!">Au secours, je suis un imposteur !</h2>
@@ -239,8 +489,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-anneflore">
+</div>
+<div class="talk-data" id="talk-data-anneflore">
+<article class="talk-card" id="talk-anneflore">
                         <div class="talk-header">
                             <span class="talk-tag tag-api" data-fr="API &amp; Doc" data-en="API &amp; Docs">API &amp; Doc</span>
                             <h2 class="talk-title" data-fr="Transformer son API Doc en levier de conversion : benchmark &amp; best practices" data-en="Turning your API Docs into a conversion lever: benchmark &amp; best practices">Transformer son API Doc en levier de conversion : benchmark &amp; best practices</h2>
@@ -262,8 +513,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-olivier">
+</div>
+<div class="talk-data" id="talk-data-olivier">
+<article class="talk-card" id="talk-olivier">
                         <div class="talk-header">
                             <span class="talk-tag tag-culture" data-fr="Culture d'équipe" data-en="Team culture">Culture d'équipe</span>
                             <h2 class="talk-title" data-fr="Failure MUST be an option" data-en="Failure MUST be an option">Failure MUST be an option</h2>
@@ -285,8 +537,9 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="talk-card" id="talk-francois">
+</div>
+<div class="talk-data" id="talk-data-francois">
+<article class="talk-card" id="talk-francois">
                         <div class="talk-header">
                             <span class="talk-tag tag-ai" data-fr="IA" data-en="AI">IA</span>
                             <h2 class="talk-title" data-fr="Développer avec l'IA" data-en="Coding with AI">Développer avec l'IA</h2>
@@ -304,23 +557,19 @@
                             </div>
                         </div>
                     </article>
+</div>
+</div>
 
+<dialog id="talk-modal" class="talk-modal" aria-labelledby="talk-modal-title">
+    <button type="button" class="talk-modal-close" aria-label="Fermer" data-fr-aria="Fermer" data-en-aria="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </button>
+    <div class="talk-modal-body"></div>
+</dialog>
 
-                </div>
-            </div>
-        </section>
-
-        <section class="next-edition-cta">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 data-fr="Venez assister à ces conférences !" data-en="Come and attend these talks!">Venez assister à ces conférences !</h2>
-                    <p data-fr="Le 12 juin 2026 à l'IUT Charlemagne, Nancy. Réservez votre place dès maintenant." data-en="On 12 June 2026 at IUT Charlemagne, Nancy. Book your place now.">
-                        Le 12 juin 2026 à l'IUT Charlemagne, Nancy. Réservez votre place dès maintenant.
-                    </p>
-                    <a href="tickets.html" class="btn btn-primary" data-fr="Réserver vos billets" data-en="Get your tickets">Réserver vos billets</a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="main-footer">
@@ -341,11 +590,12 @@
                         <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
                         <ul>
                             <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                            <li><a href="programme.html" data-fr="Programme" data-en="Schedule">Programme</a></li>
                             <li><a href="intervenants.html" data-fr="Intervenants" data-en="Speakers">Intervenants</a></li>
-                            <li><a href="conferences.html" data-fr="Conférences" data-en="Talks">Conférences</a></li>
-                            <li><a href="previous-edition.html" data-fr="Édition 2025" data-en="2025 Edition">Édition 2025</a></li>
+                            <li><a href="infos.html" data-fr="Infos pratiques" data-en="Practical info">Infos pratiques</a></li>
                             <li><a href="sponsors.html" data-fr="Sponsors" data-en="Sponsors">Sponsors</a></li>
                             <li><a href="tickets.html" data-fr="Billetterie" data-en="Ticket office">Billetterie</a></li>
+                            <li><a href="previous-edition.html" data-fr="Édition 2025" data-en="2025 Edition">Édition 2025</a></li>
                         </ul>
                     </div>
                 </div>
@@ -357,5 +607,81 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    (function () {
+        const modal = document.getElementById('talk-modal');
+        if (!modal) return;
+        const body = modal.querySelector('.talk-modal-body');
+        const closeBtn = modal.querySelector('.talk-modal-close');
+
+        function applyLang(root) {
+            const lang = localStorage.getItem('lang') || document.documentElement.lang || 'fr';
+            root.querySelectorAll('[data-fr][data-en]').forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text != null) el.innerHTML = text;
+            });
+        }
+
+        function openTalk(talkId) {
+            const source = document.getElementById('talk-data-' + talkId);
+            if (!source) return;
+            body.innerHTML = source.innerHTML;
+            applyLang(body);
+            if (typeof modal.showModal === 'function') {
+                modal.showModal();
+            } else {
+                modal.setAttribute('open', '');
+            }
+            document.body.classList.add('modal-open');
+            const titleEl = body.querySelector('.talk-title');
+            if (titleEl) titleEl.id = 'talk-modal-title';
+            body.scrollTop = 0;
+        }
+
+        function closeTalk() {
+            if (typeof modal.close === 'function') modal.close();
+            else modal.removeAttribute('open');
+            document.body.classList.remove('modal-open');
+            if (location.hash.indexOf('#talk-') === 0) {
+                history.replaceState(null, '', location.pathname + location.search);
+            }
+        }
+
+        closeBtn.addEventListener('click', closeTalk);
+        modal.addEventListener('close', () => document.body.classList.remove('modal-open'));
+        modal.addEventListener('click', e => {
+            const rect = modal.getBoundingClientRect();
+            const inDialog = e.clientX >= rect.left && e.clientX <= rect.right
+                          && e.clientY >= rect.top  && e.clientY <= rect.bottom;
+            if (!inDialog) closeTalk();
+        });
+
+        document.querySelectorAll('.schedule-talk-trigger').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                const id = btn.getAttribute('data-talk-id');
+                openTalk(id);
+                history.replaceState(null, '', '#talk-' + id);
+            });
+        });
+
+        const langSwitch = document.querySelector('.lang-switch');
+        if (langSwitch) {
+            langSwitch.addEventListener('click', () => {
+                if (modal.hasAttribute('open')) setTimeout(() => applyLang(body), 0);
+            });
+        }
+
+        function openFromHash() {
+            const h = location.hash;
+            if (h.indexOf('#talk-') === 0) {
+                const id = h.slice(6);
+                if (document.getElementById('talk-data-' + id)) openTalk(id);
+            }
+        }
+        openFromHash();
+        window.addEventListener('hashchange', openFromHash);
+    })();
+    </script>
 </body>
 </html>
