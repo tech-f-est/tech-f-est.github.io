@@ -1154,7 +1154,7 @@ section h2 {
    Sponsorship Packages
    ======================================== */
 .why-sponsor {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-alt);
 }
 
 .why-sponsor-grid {
@@ -1171,7 +1171,7 @@ section h2 {
 
 .why-card {
     padding: var(--spacing-xl);
-    background-color: var(--color-bg-alt);
+    background-color: var(--color-bg);
     border-radius: var(--border-radius-lg);
     border: 2px solid var(--color-border);
     transition: var(--transition-base);
@@ -1204,7 +1204,7 @@ section h2 {
 }
 
 .sponsorship-packages {
-    background-color: var(--color-bg-alt);
+    background-color: var(--color-bg);
 }
 
 .packages-intro {
@@ -1230,7 +1230,7 @@ section h2 {
 .package-card {
     position: relative;
     padding: var(--spacing-xl);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-alt);
     border-radius: var(--border-radius-lg);
     border: 2px solid var(--color-border);
     transition: var(--transition-base);
@@ -1244,8 +1244,9 @@ section h2 {
 }
 
 .package-card.featured {
+    background-color: var(--color-bg);
     border-color: var(--color-primary);
-    box-shadow: 0 4px 16px color-mix(in srgb, var(--color-primary) 30%, transparent);
+    box-shadow: 0 8px 32px color-mix(in srgb, var(--color-primary) 20%, transparent);
 }
 
 .package-badge {
@@ -1342,10 +1343,118 @@ section h2 {
 }
 
 /* ========================================
+   Current Sponsors Tiers
+   ======================================== */
+.sponsors-tier {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.sponsors-tier h3 {
+    text-align: center;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-xl);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.sponsors-tier h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.tier-gold h3 {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tier-gold h3::after {
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+}
+
+.tier-silver h3 {
+    color: #C0C0C0;
+}
+.tier-silver h3::after {
+    background: #C0C0C0;
+}
+
+.tier-bronze h3 {
+    color: #CD7F32;
+}
+.tier-bronze h3::after {
+    background: #CD7F32;
+}
+
+.sponsors-tier .sponsors-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+}
+
+/* Tier specific card styles */
+.tier-gold .sponsor-logo-item {
+    flex: 0 1 400px;
+    border-color: #FFD700;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+}
+
+.tier-gold .sponsor-logo-item:hover {
+    border-color: #FFD700;
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.25);
+}
+
+.tier-silver .sponsor-logo-item {
+    flex: 0 1 300px;
+    border-color: #C0C0C0;
+}
+
+.tier-silver .sponsor-logo-item:hover {
+    border-color: #C0C0C0;
+    box-shadow: 0 15px 30px rgba(192, 192, 192, 0.25);
+}
+
+.tier-bronze .sponsor-logo-item {
+    flex: 0 1 250px;
+    border-color: #CD7F32;
+}
+
+.tier-bronze .sponsor-logo-item:hover {
+    border-color: #CD7F32;
+    box-shadow: 0 15px 30px rgba(205, 127, 50, 0.25);
+}
+
+.sponsor-badge {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: var(--color-primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 5;
+    border: 2px solid var(--color-bg);
+}
+
+/* ========================================
    Previous Sponsors
    ======================================== */
 .previous-sponsors {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-alt);
 }
 
 .sponsors-subtitle {
@@ -1369,28 +1478,24 @@ section h2 {
 
 .sponsor-logo-item {
     aspect-ratio: 16 / 9;
-    border: 3px solid var(--color-border);
-    border-radius: 6px;
-    overflow: hidden;
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    overflow: visible; /* To allow badges to overflow */
     position: relative;
-    background: linear-gradient(135deg,
-        color-mix(in srgb, var(--color-border) 50%, transparent),
-        var(--color-border)
-    );
-    padding: 3px;
+    background: white;
+    padding: 0;
     transition: all var(--transition-base);
     animation: galleryFadeIn 0.6s ease-out backwards;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .sponsor-logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
     border-color: var(--color-primary);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-    box-shadow: 0 4px 20px color-mix(in srgb, var(--color-primary) 40%, transparent),
-                0 0 0 1px color-mix(in srgb, var(--color-primary) 20%, transparent);
-    transform: translateY(-2px);
 }
 
 /* Stagger animation for sponsor logos */
@@ -1422,11 +1527,9 @@ section h2 {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 3px;
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     transition: transform var(--transition-slow);
     display: block;
-    background-color: var(--color-bg);
 }
 
 .sponsor-logo-item:hover img {
