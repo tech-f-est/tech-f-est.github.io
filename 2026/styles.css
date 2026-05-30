@@ -1434,6 +1434,17 @@ section h2 {
     box-shadow: 0 15px 30px rgba(205, 127, 50, 0.25);
 }
 
+.tier-partners h3 {
+    color: var(--color-text);
+}
+.tier-partners h3::after {
+    background: var(--color-text);
+}
+
+.tier-partners .sponsor-logo-item {
+    flex: 0 1 200px;
+}
+
 .sponsor-badge {
     position: absolute;
     top: -12px;
